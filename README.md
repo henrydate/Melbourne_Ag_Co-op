@@ -15,7 +15,7 @@
 
 ## Technology
 #### Programming: Python 
-#### Libraries:
+#### Libraries/Tools:
 * **Pandas** - Pandas is a Python library used for working with data sets. It has functions for analyzing, 
   cleaning, exploring, and manipulating data.
 * **Streamlit** -  Streamlit is an open source app framework in Python language. It helps us create web apps for data science and machine learning in a short     time. It is compatible with major Python libraries such as scikit-learn, Keras, PyTorch, SymPy(latex), NumPy, pandas, Matplotlib etc.
