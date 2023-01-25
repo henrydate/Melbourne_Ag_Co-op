@@ -148,7 +148,31 @@ contract ERC721Staking is Ownable, ReentrancyGaurd, Pausable {
         rewardsToken.safeTransfer(msg.sender, rewards);
 
     }// End of function claimRewards
-    
+    // Start of function setRewardsPerHour
+    // This function is used to set the reward tokens accrued per hour
+    function setRewardsPerHour(uint256 _newValue) public onlyOwner {
+        // _newValue holds the new value of the rewards per hour
+        address[] memory _stakers = stakersArray;
+        //Creating a len variable to store the length of _stakers
+        uint256 len = _stakers.length;
+        // Initialising a for loop
+        for (uint256 i; i < len; ++i) {
+            // Updating the rewards for the stakers
+            updateRewards(_stakers[i]);
+        }// End of for loop
+        // Assigning _newValue to rewardsPerHour to update it with the current reward. 
+        rewardsPerHour = _newValue;
+    }// End of function
+    // Start of function userStakeInfo
+    // This function is used to provide info the the user about the Tokens staked and the available rewards.
+    function userStakeInfo(address _user) public view returns (uint256[] memory _stakedTokenIds, uint256 _availableRewards)
+    {
+        // The parameter _stakedTokenIds holds the array of TokenIds staked by the user.
+        // _availableRewards holds the value of rewards available with respect to the number of tokens staked.
+        return (stakers[_user].stakedTokenIds, availableRewards(_user));
+    } // End of function
+
+
 
 
 
