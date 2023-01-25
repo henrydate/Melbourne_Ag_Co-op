@@ -199,4 +199,34 @@ contract ERC721Staking is Ownable, ReentrancyGaurd, Pausable {
         // If the timestamp difference and stakedTokens Length is not 0, the below LOC multiplies with rewardsPerHour and divides by total seconds per hour. 
         (((((block.timestamp - staker.timeOfLastUpdate) * staker.stakedTokenIds.length)) * rewardsPerHour) / SECONDS_PER_HOUR);
     }// End of function calculateRewards.
+    // Start of function updateRewards
+    function updateRewards(address _staker) internal {
+        // Using storage to hold the data between the function calls.
+        Staker storage staker = stakers[_staker];
+        //Adding the calculated rewards value to the unclaimed rewards
+        staker.unclaimedRewards += calculateRewards(_staker);
+        // Appending the timeOfLastUpdate with the current timestamp of the block. 
+        staker.timeOfLastUpdate = block.timestamp;
+    }// End of function updateRewards. 
+    //Start of function pause
+    // This function is used to pause staking/buying.
+    // This function can only be used by the owner
+    function pause() external onlyOwner{
+        _pause();
+    }// End of function pause
     
+    // Start of function unpause()
+    // This function is used to Resume staking
+    function unpause() external onlyOwner {
+        _unpause();
+    }// End of function Unpause. 
+
+
+
+
+
+
+    
+
+
+}
