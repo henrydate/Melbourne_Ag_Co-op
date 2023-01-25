@@ -220,13 +220,4 @@ contract ERC721Staking is Ownable, ReentrancyGaurd, Pausable {
     function unpause() external onlyOwner {
         _unpause();
     }// End of function Unpause. 
-
-
-
-
-
-
-    
-
-
 }
