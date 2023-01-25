@@ -145,7 +145,7 @@ contract ERC721Staking is Ownable, ReentrancyGaurd, Pausable {
         // Setting the unclaimedRewards to 0 as user claimed his rewards. 
         staker.unclaimedRewards = 0;
         // Transfering the rewards to the users address. 
-        rewardsToken.safeTransfer(msg.sender, rewards);
+        rewardToken.safeTransfer(msg.sender, rewards);
 
     }// End of function claimRewards
     // Start of function setRewardsPerHour
@@ -171,13 +171,32 @@ contract ERC721Staking is Ownable, ReentrancyGaurd, Pausable {
         // _availableRewards holds the value of rewards available with respect to the number of tokens staked.
         return (stakers[_user].stakedTokenIds, availableRewards(_user));
     } // End of function
-
-
-
-
-
-
+    // Start of function availableRewards
+    // This function stores the information of the accumulated rewards and the rewards stored byut not claimed. 
+    // This functions used the user address and returns the rewards available for that specific user. 
+    function availableRewards(address _user) internal view returns (uint256 _rewards) {
+        // _user holds the address of the user and _rewards holds the value of the available reward for the user.
+        // Using memory to hold the data between the function calls.
+        Staker memory staker = stakers[_user];
+        // Initialising a if statement
+        // Checking if the length of the stakedTokens is equal to 0
+        if (staker.stakedTokenIds.length == 0) {
+            // If true return staker.unclaimedRewards
+            return staker.unclaimedRewards;
+        }// End of if statement
+        // Apend the _rewards with staker.unclaimedRewards and calculateRewards(_user) of the user
+        _rewards = staker.unclaimedRewards + calculateRewards(_user);
+    }// End of function
+    // Start of function calculateRewards
+    // This function is used to calculate the rewards for a user and returns the rewards for a specific user.
+    function calculateRewards(address _staker) internal view returns (uint256 _rewards)
+    {
+        // Using memory to hold the data between the function calls.
+        Staker memory staker = stakers[_staker];
+        return 
+        // calculating the rewards. 
+        // If the timestamp of the withdraw is 0: the function returns 0, if the length of stakedTokens is 0: function returns 0
+        // If the timestamp difference and stakedTokens Length is not 0, the below LOC multiplies with rewardsPerHour and divides by total seconds per hour. 
+        (((((block.timestamp - staker.timeOfLastUpdate) * staker.stakedTokenIds.length)) * rewardsPerHour) / SECONDS_PER_HOUR);
+    }// End of function calculateRewards.
     
-
-
-}
