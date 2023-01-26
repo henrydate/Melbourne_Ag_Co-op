@@ -123,8 +123,22 @@ contract StakingToken is ERC20, Ownable {
     {
         return stakes[_stakeholder] / 100;
     } //End of calculateReward function. 
+    //Start of function distributeRewards.
+    //This function is used to distribute the rewards to all the users/stakeholders which can only be accessed by Owner. 
 
-    /*  YTD distributeRewards(), withdrawReward().
+    function distributeRewards() public onlyOwner {
+        //Start of for loop
+        for (uint256 s = 0; s < stakeholders.length; s += 1){
+            //Assigning each user to a stakehilder address in a loop. 
+            address stakeholder = stakeholders[s];
+            //Calculating reward for each user/stakeholder. 
+            uint256 reward = calculateReward(stakeholder);
+            //Adding reward to the stakeholders address. 
+            rewards[stakeholder] = rewards[stakeholder].add(reward);
+        }//End of for loop.
+    }//End of distributeRewards function. 
+
+    /*  YTD  withdrawReward().*/
     
 
 
