@@ -83,7 +83,21 @@ contract StakingToken is ERC20, Ownable {
         (bool _isStakeholder, ) = isStakeholder(_stakeholder);
         // Adding the new address as a new stakeholder if user is not present in the list using push function. 
         if(!_isStakeholder) stakeholders.push(_stakeholder);
-    }// End of addStakeholder function. 
+    }// End of addStakeholder function.
+     //Start iof function removeStakeholder. 
+     // This function is used to remove the stakeholder/user.
+    function removeStakeholder(address _stakeholder) public {
+        //Checking if the stakeholder is present
+        (bool _isStakeholder, uint256 s) = isStakeholder(_stakeholder);
+        //Start of if clause. 
+        if(_isStakeholder){
+            //Checking if the stakeholder is present and removing from the list using pop()
+            stakeholders[s] = stakeholders[stakeholders.length - 1];
+            stakeholders.pop();
+        } //End of if clause
+    }//End of removeStakeholder.
+
+    /*  YTD rewardOf(),totalRewards(),calculateReward(), distributeRewards(), withdrawReward().
     
 
 
