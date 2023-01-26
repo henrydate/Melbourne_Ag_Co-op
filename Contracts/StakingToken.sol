@@ -96,8 +96,15 @@ contract StakingToken is ERC20, Ownable {
             stakeholders.pop();
         } //End of if clause
     }//End of removeStakeholder.
+    //Start of rewardOf function. 
+    // This function is used by the user to check his rewards. 
+    // The _stakeholder holds the address of the stakeholder to check his balance. 
+    function rewardOf(address _stakeholder) public view returns(uint256)
+    {// Return the rewards accumulated by the _stakeholder. 
+        return rewards[_stakeholder];
+    }// End of function rewardOf(). 
 
-    /*  YTD rewardOf(),totalRewards(),calculateReward(), distributeRewards(), withdrawReward().
+    /*  YTD totalRewards(),calculateReward(), distributeRewards(), withdrawReward().
     
 
 
