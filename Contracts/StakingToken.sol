@@ -116,8 +116,15 @@ contract StakingToken is ERC20, Ownable {
         }//End of for loop
         return _totalRewards;
     }//End of function totalRewards. 
+    //Start of function calculateReward
+    //This function is used to calculate the reward for each user. 
+    //The _stakeholder holds the value of the stakeholder's/users address. 
+    function calculateReward(address _stakeholder) public view returns(uint256)
+    {
+        return stakes[_stakeholder] / 100;
+    } //End of calculateReward function. 
 
-    /*  YTD calculateReward(), distributeRewards(), withdrawReward().
+    /*  YTD distributeRewards(), withdrawReward().
     
 
 
