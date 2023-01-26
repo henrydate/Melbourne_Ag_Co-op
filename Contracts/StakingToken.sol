@@ -137,14 +137,31 @@ contract StakingToken is ERC20, Ownable {
             rewards[stakeholder] = rewards[stakeholder].add(reward);
         }//End of for loop.
     }//End of distributeRewards function. 
+    //Start of function withdrawReward
+    //This function is used by stakeholders to unstake/withdraw the rewards
+    function withdrawReward() public
+    {
+        //Assigning reward to user using rewards[address of user]. 
+        uint256 reward = rewards[msg.sender];
+        //Assigning rewards[address of user] as 0 to avoid iterative payments in future. 
+        rewards[msg.sender] = 0;
+        //transfering the tokens as rewards. 
+        _mint(msg.sender, reward);
+    }// End of function withdrawReward.
+}// Contract End
 
-    /*  YTD  withdrawReward().*/
-    
+/* 
+        |------------         |-----------------|           |--------------
+        |                     |                 |           |
+        |                     |                 |           |   
+        |                     |                 |           |
+        |                     |                 |           |
+        |------------         |                 |           |---------------
+        |                     |                 |           |           
+        |                     |                 |           |               
+        |                     |                 |           |           
+        |                     |                 |           | 
+        |-------------        |-----------------|           |
 
 
-
-
-
- 
-
-}
+*/
