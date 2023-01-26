@@ -103,8 +103,21 @@ contract StakingToken is ERC20, Ownable {
     {// Return the rewards accumulated by the _stakeholder. 
         return rewards[_stakeholder];
     }// End of function rewardOf(). 
+    // Start of totalRewards
+    // This function is used to find the sum of the rewards with respect to all users/stakeholders. 
+    //This functuins returns aggregated rewards from all the users.  
+    function totalRewards() public view returns(uint256)
+    {   //Initialised totalRewards as 0.
+        uint256 _totalRewards = 0;
+        //Start of iterative loop. 
+        for (uint256 s = 0; s < stakeholders.length; s += 1){
+            //Adding the rewards for every rewards in the stakeholders list. 
+            _totalRewards = _totalRewards.add(rewards[stakeholders[s]]);
+        }//End of for loop
+        return _totalRewards;
+    }//End of function totalRewards. 
 
-    /*  YTD totalRewards(),calculateReward(), distributeRewards(), withdrawReward().
+    /*  YTD calculateReward(), distributeRewards(), withdrawReward().
     
 
 
