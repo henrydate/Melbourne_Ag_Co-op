@@ -1,4 +1,4 @@
-pragma solidity ^0.5.0;
+pragma solidity ^0.8.17;
 
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
@@ -22,7 +22,7 @@ contract ERC721Staking is Ownable, ReentrancyGaurd, Pausable {
     //Creating a Struct which holds the buy/staking details of the users
     struct Staker {
         //Creating a variable which stores the array of TokenId's staked by the users.
-        unit256[] stakedTokenIds;
+        uint256[] stakedTokenIds;
         // Creating the variable which shows the number of Tokens which are not claimed by the user
         uint256 unclaimedRewards;
         // Creating a variable which holds the timestamp of last update of the rewards
