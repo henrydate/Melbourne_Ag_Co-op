@@ -76,7 +76,16 @@ contract StakingToken is ERC20, Ownable {
         }// End of for loop
         return (false, 0);
     } // End of isStakeholder function. 
+    //Start of function addStakeholder. 
+    // The use of this function  is to add anew stakeholder. 
+    function addStakeholder(address _stakeholder) public {
+        // Checking if the address is existing in the list of the stakeholders. 
+        (bool _isStakeholder, ) = isStakeholder(_stakeholder);
+        // Adding the new address as a new stakeholder if user is not present in the list using push function. 
+        if(!_isStakeholder) stakeholders.push(_stakeholder);
+    }// End of addStakeholder function. 
     
+
 
 
 
