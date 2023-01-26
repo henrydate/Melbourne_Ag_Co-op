@@ -65,6 +65,17 @@ contract StakingToken is ERC20, Ownable {
         }// End of for loop
         return _totalStakes;
     }// End of totalStakes().
+    // Start of function isStakeholder
+    // This function is used to check/know if the user is a stakeholder. 
+    function isStakeholder(address _address) public view returns(bool, uint256)
+    {// Start if for loop to iterate through the list of stakeholder addresses. 
+        for (uint256 s = 0; s < stakeholders.length; s += 1){
+            // Start iof if clause. 
+            // IF clause is used to check if the address is present in the list of the stakeholders which returns true of present. 
+            if (_address == stakeholders[s]) return (true, s);
+        }// End of for loop
+        return (false, 0);
+    } // End of isStakeholder function. 
     
 
 
