@@ -45,8 +45,17 @@ contract StakingToken is ERC20, Ownable {
         if(stakes[msg.sender] == 0) removeStakeholder(msg.sender);
         _mint(msg.sender, _stake);
     }// End of removeStake function.
-
+    //Start of function stakeOf.
+    // This function is used to keep track of the stakeholders and their investments.
+    // This function takes in the value of stakeholder to find the staked amount of the user. 
+    function stakeOf(address _stakeholder) public view returns(uint256)
+    {
+        // The function returns the amount staked with respect to stakeholders. 
+        return stakes[_stakeholder];
+    }// End of function stakeOf.
     
+
+
 
  
 
