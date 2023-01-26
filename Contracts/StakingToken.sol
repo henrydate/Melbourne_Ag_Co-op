@@ -53,7 +53,20 @@ contract StakingToken is ERC20, Ownable {
         // The function returns the amount staked with respect to stakeholders. 
         return stakes[_stakeholder];
     }// End of function stakeOf.
+    // Start of function totalStakes. 
+    //This function is used to find the aggregated stakes from all the stakeholders.
+    function totalStakes() public view returns(uint256)
+    {   //Initialising the variable totalStakes as a 0
+        uint256 _totalStakes = 0;
+        //Start of for loop
+        //Initialising a for loop to count the sum of the staked amount
+        for (uint256 s = 0; s < stakeholders.length; s += 1){
+            _totalStakes = _totalStakes.add(stakes[stakeholders[s]]);
+        }// End of for loop
+        return _totalStakes;
+    }// End of totalStakes().
     
+
 
 
 
