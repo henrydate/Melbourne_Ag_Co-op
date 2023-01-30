@@ -1,3 +1,4 @@
+//SPDX-License-Identifier: MIT
 pragma solidity ^0.8.17;
 
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
@@ -10,13 +11,13 @@ import "@openzeppelin/contracts/security/Pausable.sol";
 //The Contract is built to be compatible with ERC721 and ERC20 Tokens
 // The contract ERC20Staking avoids the most common problem of reentrancy and can pause the functionality is remediation is pending.
 // The contract is iniatialised aas a OWnable contract to inherit and grant the basic authorization control functions which simplifies the implementation of "user permissions".
-contract ERC721Staking is Ownable, ReentrancyGaurd, Pausable {
+contract ERC721Staking is Ownable, ReentrancyGuard, Pausable {
     // Inheriting the properties of SafeERC20 withing the contract
     using SafeERC20 for IERC20;
     // ERC20 token which will be redistributed to owners as a dividen
-    IERC20 public immutable rewardToken;
+    IERC20 public  rewardToken;
     // ERC721 Token which will be used to buy the property.
-    IERC721 public immutable coinCollection;
+    IERC721 public  coinCollection;
     //Declaring a constant which holds the number of seconds in a hour
     uint256 constant SECONDS_PER_HOUR = 3600;
     //Creating a Struct which holds the buy/staking details of the users
@@ -220,4 +221,4 @@ contract ERC721Staking is Ownable, ReentrancyGaurd, Pausable {
     function unpause() external onlyOwner {
         _unpause();
     }// End of function Unpause. 
-}
+    }
