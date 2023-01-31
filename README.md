@@ -11,6 +11,13 @@
 
 #### Summary of the analysis
 
+#### Valuation assessment
+
+Streamlit was used to demonstrate the projected value of Melbourne Ag Co-Op.  The assumption used was 2% capital growth based off the initial purchase price of $1,700,000.  This valuation does not include the value of the pistacchio business.
+
+![Screenshot 2023-02-01 at 9 29 48 am](https://user-images.githubusercontent.com/108632632/215898400-7de6cb36-a936-41d0-9d6d-c49ed204ba4b.png)
+
+
 ## Challenges/Next steps
 
 ## Technology
