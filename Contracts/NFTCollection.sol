@@ -38,5 +38,7 @@ pragma solidity ^0.8.4;
                 _safeMint(_user,tokenId);
             }
         }//End of function mint. 
+        
+        //Start of function 
 
  }
