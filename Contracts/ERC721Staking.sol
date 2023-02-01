@@ -37,7 +37,7 @@ contract ERC721Staking is Ownable, ReentrancyGuard, Pausable {
     mapping(uint256=> address) public stakerAddress;
     // Creating a variable which holds the Array of stakers/buyers address
     address[] public stakersArray;
-    // Cfreating a constructor to initialise ERC20 and ERC721 Interfaces. 
+    // Creating a constructor to initialise ERC20 and ERC721 Interfaces. 
     constructor(IERC721 _coinCollection, IERC20 _rewardToken){
         //parameter _coinCollection holds the address iof the ERC721 collection
         coinCollection = _coinCollection;
