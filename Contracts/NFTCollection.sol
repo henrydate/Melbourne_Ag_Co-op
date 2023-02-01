@@ -38,7 +38,37 @@ pragma solidity ^0.8.4;
                 _safeMint(_user,tokenId);
             }
         }//End of function mint. 
-        
-        //Start of function 
+
+        //Start of function tokensOfOwner
+        // This function is used to keep track of the owners Tokens. 
+        // The function seeks a owner address to check the number of tokens he owns. 
+        function tokensOfOwner(address _owner) public view returns (uint256[] memory)
+        {   // Creating a ownerTokenCount which stores the balance of the owner.
+            uint256 ownerTokenCount = balanceOf(_owner);
+            // Creating a memory variable and storing a array of ownerTokenCount. 
+            uint256[] memory ownedTokenIds = new uint256[](ownerTokenCount);
+            for (uint256 i; i < ownerTokenCount; ++i) {
+                ownedTokenIds[i] = tokenOfOwnerByIndex(_owner, i);
+            }//End of for loop
+        return ownedTokenIds; //Return statement.
+    }
+    // Function overrides required by solidity
+    function _beforeTokenTransfer(
+        address from,
+        address to,
+        uint256 tokenId
+    ) internal override(ERC721, ERC721Enumerable) {
+        super._beforeTokenTransfer(from, to, tokenId);
+    }
+
+    function supportsInterface(bytes4 interfaceId)
+        public
+        view
+        override(ERC721, ERC721Enumerable)
+        returns (bool)
+    {
+        return super.supportsInterface(interfaceId);
+    }
+
 
  }
