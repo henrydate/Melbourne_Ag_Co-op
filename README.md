@@ -28,13 +28,13 @@ Streamlit was used to demonstrate the projected value of Melbourne Ag Co-Op.  Th
 ![Gonna Make It](images/gmi.png)
 
 #### Testing Results
-
+*   
 
 #### Implementing burnable tokens
-
+*   
 
 #### Rewarding investors with governance tokens
-A % of profits is withheld for treasury (Operations and Govenance) 
+*   A % of profits is withheld for treasury (Operations and Govenance) 
 
 
 ## Technology
