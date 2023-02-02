@@ -12,12 +12,12 @@ We successfully developed a solidity based application with staked tokens tied t
   - Sustainable investment 
 
 ## Data Preparation and Model Training
-#### Data Preparation
+#### Data Preparation:
 
 
-#### Summary of the analysis
+#### Summary of the analysis:
 
-#### Valuation assessment
+#### Valuation assessment:
 
 Streamlit was used to demonstrate the projected value of Melbourne Ag Co-Op.  The assumption used was 2% capital growth based off the initial investment $1,700,000.  
 
@@ -27,18 +27,19 @@ Streamlit was used to demonstrate the projected value of Melbourne Ag Co-Op.  Th
 ![Governance Token](images/governance.png)
 ![Gonna Make It](images/gmi.png)
 
-#### Testing Results
+#### Testing Results:
 *   
 
-#### Implementing burnable tokens
+#### Implementing burnable tokens:
 *   
 
-#### Rewarding investors with governance tokens
+#### Rewarding investors with governance tokens:
 *   A % of profits is withheld for treasury (Operations and Govenance) 
 
 
 ## Technology
-#### Programming: Python 
+#### Programming: 
+*  **Python** 
 #### Libraries/Tools:
 * **Pandas** - Pandas is a Python library used for working with data sets. It has functions for analyzing, 
 cleaning, exploring, and manipulating data.
