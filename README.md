@@ -7,6 +7,10 @@ Melbourne Ag Co-op was established in 2022 by a group of like minded entrepreneu
 
 We successfully developed a solidity based application with staked tokens tied to the annual valuation of the established business. Operating costs are deducted from sales revenue (pistachio kernels) before being distributed to token holders. 
 
+  - Earn yearly dividends
+  - Use your ETH
+  - Sustainable investment 
+
 ## Data Preparation and Model Training
 #### Data Preparation
 
