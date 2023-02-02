@@ -24,6 +24,9 @@ Streamlit was used to demonstrate the projected value of Melbourne Ag Co-Op.  Th
 ![Screenshot 2023-02-02 at 7 14 31 pm](https://user-images.githubusercontent.com/108632632/216268617-66815ad0-fb44-45d6-a981-d1420a4fb065.png)
 
 ## Challenges/Next steps
+![Governance Token]("images/governance.png")
+![Gonna Make It]("images/gmi.png")
+
 
 
 
