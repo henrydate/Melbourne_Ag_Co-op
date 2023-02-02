@@ -31,7 +31,10 @@ Streamlit was used to demonstrate the projected value of Melbourne Ag Co-Op.  Th
 *   
 
 #### Implementing burnable tokens:
-*   
+*   Burning ERC721 tokens when redeemed for our NUT ERC20 token  
+
+#### Redeeming NUT tokens:
+*   Redeeming NUT ERC20 tokens for newly minted ERC721 tokens 
 
 #### Rewarding investors with governance tokens:
 *   A % of profits is withheld for treasury (Operations and Govenance) 
