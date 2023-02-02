@@ -30,6 +30,10 @@ Streamlit was used to demonstrate the projected value of Melbourne Ag Co-Op.  Th
 * **Ganache** - Ganache is a private Ethereum blockchain environment that allows to you emulate the Ethereum blockchain so that you can interact with smart       contracts in your own private blockchain.
 * **Metamask** - MetaMask is a software cryptocurrency wallet used to interact with the Ethereum blockchain. It allows users to access their Ethereum wallet through a browser extension or mobile app, which can then be used to interact with decentralized applications.
 * **VS Code** - Visual Studio Code, also commonly referred to as VS Code, is a source-code editor made by Microsoft with the Electron Framework, for Windows,     Linux and macOS. Features include support for debugging, syntax highlighting, intelligent code completion, snippets, code refactoring, and embedded Git.
+* **Brownie** - Brownie is a Python-based development and testing framework for smart contracts targeting the Ethereum Virtual Machine.
+* **Infura** - 
+* **Goerli** -
+* **Ethascan.au** - 
 
 ## Board Team Members
    *  Henry Date  
