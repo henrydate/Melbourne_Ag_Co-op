@@ -3,7 +3,9 @@
 # Project Goal
 
 ## About the project
+Melbourne Ag Co-op was established in 2022 by a group of like minded entrepreneurs. With a diverse mix of backgrounds from software engineers to Agriculture scientists, this team of specialists have acquired existing farms in the Gippsland region of Victoria and minted the 'nut' token (NUT).
 
+We successfully developed a solidity based application with staked tokens tied to the annual valuation of the established business. Operating costs are deducted from sales revenue (pistachio kernels) before being distributed to token holders. 
 
 ## Data Preparation and Model Training
 #### Data Preparation
@@ -18,6 +20,8 @@ Streamlit was used to demonstrate the projected value of Melbourne Ag Co-Op.  Th
 ![Screenshot 2023-02-02 at 7 14 31 pm](https://user-images.githubusercontent.com/108632632/216268617-66815ad0-fb44-45d6-a981-d1420a4fb065.png)
 
 ## Challenges/Next steps
+
+
 
 ## Technology
 #### Programming: Python 
