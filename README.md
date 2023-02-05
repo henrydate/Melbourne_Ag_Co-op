@@ -11,13 +11,9 @@ We successfully developed a solidity based application with staked tokens tied t
   - Use your ETH
   - Sustainable investment 
 
-## Data Preparation and Model Training
-#### Data Preparation:
+## Valuation assessment
 
-
-#### Summary of the analysis:
-
-#### Valuation assessment:
+#### Streamlit interface:
 
 Streamlit was used to demonstrate the projected value of Melbourne Ag Co-Op.  The assumption used was 2% capital growth based off the initial investment $1,700,000.  
 
