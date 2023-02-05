@@ -19,21 +19,21 @@ Streamlit was used to demonstrate the projected value of Melbourne Ag Co-Op.  Th
 ![streamlit cost breakdown](images/streamlit_cost_breakdown.png)
 
 ## Challenges/Next steps
-![Governance Token](images/governance.png)
-![Gonna Make It](images/gmi.png)
-
 #### Testing Results:
 *   To identify any exploits before deployment onto EVM via Brownie or Hardhat
 
 #### Implementing burnable tokens:
 *   Burning ERC721 tokens when redeemed for our NUT ERC20 token  
+![Gonna Make It](images/gmi.png)
+
+
 
 #### Redeeming NUT tokens:
 *   Redeeming NUT ERC20 tokens for newly minted ERC721 tokens 
 
 #### Rewarding investors with governance tokens:
 *   A % of profits is withheld for treasury (Operations and Governance) 
-
+![Governance Token](images/governance.png)
 
 ## Technology
 #### Programming: 
