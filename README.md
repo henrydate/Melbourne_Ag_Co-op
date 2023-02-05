@@ -23,7 +23,7 @@ Streamlit was used to demonstrate the projected value of Melbourne Ag Co-Op.  Th
 ![Gonna Make It](images/gmi.png)
 
 #### Testing Results:
-*   
+*   To identify any exploits before deployment onto EVM via Brownie or Hardhat
 
 #### Implementing burnable tokens:
 *   Burning ERC721 tokens when redeemed for our NUT ERC20 token  
