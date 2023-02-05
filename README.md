@@ -34,7 +34,7 @@ Streamlit was used to demonstrate the projected value of Melbourne Ag Co-Op.  Th
 *   Redeeming NUT ERC20 tokens for newly minted ERC721 tokens 
 
 #### Rewarding investors with governance tokens:
-*   A % of profits is withheld for treasury (Operations and Govenance) 
+*   A % of profits is withheld for treasury (Operations and Governance) 
 
 
 ## Technology
