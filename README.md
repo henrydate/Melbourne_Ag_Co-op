@@ -21,8 +21,8 @@ We successfully developed a solidity based application with staked tokens tied t
 
 Streamlit was used to demonstrate the projected value of Melbourne Ag Co-Op.  The assumption used was 2% capital growth based off the initial investment $1,700,000.  
 
-![streamlit interface](streamlit.png)
-![streamlit interface](streamlit_cost_breakdown.png)
+![streamlit interface](images/streamlit.png)
+![streamlit cost breakdown](images/streamlit_cost_breakdown.png)
 
 ## Challenges/Next steps
 ![Governance Token](images/governance.png)
