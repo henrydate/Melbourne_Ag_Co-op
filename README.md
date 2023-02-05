@@ -1,7 +1,5 @@
 # Melbourne_Ag_Co-op
 
-# Project Goal
-
 ## About the project
 Melbourne Ag Co-op was established in 2022 by a group of like minded entrepreneurs. With a diverse mix of backgrounds from software engineers to Agriculture scientists, this team of specialists have acquired existing farms in the Gippsland region of Victoria and minted the 'nut' token (NUT).
 
