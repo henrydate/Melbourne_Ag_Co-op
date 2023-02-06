@@ -1,4 +1,4 @@
-### Starting the Slide Pak...
+### The Slide Pack
 
 ![Preso_slide1](./images/Preso_slide1.png)
 
@@ -15,3 +15,9 @@
 ![Preso_slide7](./images/Preso_slide7.png)
 
 ![Preso_slide8](./images/Preso_slide8.png)
+
+![Preso_slide9](./images/Preso_slide9.png)
+
+![Preso_slide10](./images/Preso_slide10.png)
+
+### Thankyou.
