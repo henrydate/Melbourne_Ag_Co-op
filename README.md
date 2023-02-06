@@ -18,6 +18,29 @@ Streamlit was used to demonstrate the projected value of Melbourne Ag Co-Op.  Th
 ![streamlit interface](images/streamlit.png)
 ![streamlit cost breakdown](images/streamlit_cost_breakdown.png)
 
+## Deployment
+### Deployment of ERC721Staking
+
+#### Deployed Contract in Remix. 
+![Deployed ERC721Staking Contract]{images/Doployment_of_ERC721.png}
+#### Features of Users: 
+
+Using this contract users can ClaimRewards(Dividends) by depositing their ERC721 Token/s and to unstake(Sell) their ERC721 Tokens. 
+
+#### Features of Owner
+
+Owner of this contract can set/alter the reward for the users, pause/unpause the staking activity. 
+
+The functions of ERC721Staking contract are ClaimRewards(To claim the rewards), Pause(To stop staking activity), renounce(To change the owner of the contract), SetRewardsPerHour(To set the Rewards), stake(to Stake ERC721 Tokens), transferOwnership(To Transfer the ownership of the tokens), unpause(To unpause staking activity) and withdraw(To unstake the ERC721 Tokens)
+
+#### Function, function calls of ERC721 Contract. 
+![Functions of ERC721 Contract]{images/Function_ERC721Staking.png}
+![Function Calls of ERC721 Contract]{images/Function_calls_ERC721Staking.png
+
+### Deployment of NFTCollection contract
+
+
+
 ## Challenges/Next steps
 #### Testing Results:
 *   To identify any exploits before deployment onto EVM via Brownie or Hardhat
