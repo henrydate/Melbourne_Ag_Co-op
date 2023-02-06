@@ -23,8 +23,25 @@ import "@openzeppelin/contracts/access/Ownable.sol";
         require(msg.sender == staking,"Fruit::mint: only staking contract can mint");
         _mint(to, amount);
     }//End of function. 
-    
-    
+    //This function is used to take FRUIT Tokens out of circulation. 
+    //Start of function
+    function burn(uint256 amount)external onlyOwner {
+        _burn(amount);
+    }//End of function mint
+}//End of Contract
+/* 
+        |------------         |-----------------|           |--------------
+        |                     |                 |           |
+        |                     |                 |           |   
+        |                     |                 |           |
+        |                     |                 |           |
+        |------------         |                 |           |---------------
+        |                     |                 |           |           
+        |                     |                 |           |               
+        |                     |                 |           |           
+        |                     |                 |           | 
+        |-------------        |-----------------|           |
 
- }
+
+*/
     
