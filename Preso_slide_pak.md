@@ -19,5 +19,3 @@
 ![Preso_slide9](./images/Preso_slide9.png)
 
 ![Preso_slide10](./images/Preso_slide10.png)
-
-### Thankyou.
