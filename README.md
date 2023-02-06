@@ -22,7 +22,7 @@ Streamlit was used to demonstrate the projected value of Melbourne Ag Co-Op.  Th
 ### Deployment of ERC721Staking
 
 #### Deployed Contract in Remix. 
-![Deployed ERC721Staking Contract]{images/Doployment_of_ERC721.png}
+![Deployed ERC721Staking Contract](images/Doployment_of_ERC721.png)
 #### Features of Users: 
 
 Using this contract users can ClaimRewards(Dividends) by depositing their ERC721 Token/s and to unstake(Sell) their ERC721 Tokens. 
@@ -33,13 +33,25 @@ Owner of this contract can set/alter the reward for the users, pause/unpause the
 
 The functions of ERC721Staking contract are ClaimRewards(To claim the rewards), Pause(To stop staking activity), renounce(To change the owner of the contract), SetRewardsPerHour(To set the Rewards), stake(to Stake ERC721 Tokens), transferOwnership(To Transfer the ownership of the tokens), unpause(To unpause staking activity) and withdraw(To unstake the ERC721 Tokens)
 
-#### Function, function calls of ERC721 Contract. 
-![Functions of ERC721 Contract]{images/Function_ERC721Staking.png}
-![Function Calls of ERC721 Contract]{images/Function_calls_ERC721Staking.png
+#### Function and function calls of ERC721 Contract. 
+![Functions of ERC721 Contract](images/Function_ERC721Staking.png)
+![Function Calls of ERC721 Contract](images/Function_calls_ERC721Staking.png)
 
 ### Deployment of NFTCollection contract
 
+This contract enables Owner to mint, burn the ERC721 Tokens. 
 
+#### Image of the Deployed NFTCollection Contract in Remix.
+![Deployed NFTCollection Contract in Remix](images/Deployment_NFTCollection.png)
+
+#### Functions of NFTCollection. 
+
+NFT collection contract consists of approve(To approve the transfer of tokens), burn(To take tokens out of circulation), mint(To add tokens into circulation), renounce(To set new owner for the contract). 
+
+#### Image of Function and Function calls of NFTCollection contract. 
+
+![Functions of NFTCollection Contract](images/Functions_NFTCollection.png)
+![Function Calls of NFTCollection Contract](images/Function_calls_NFTCollection.png)
 
 ## Challenges/Next steps
 #### Testing Results:
