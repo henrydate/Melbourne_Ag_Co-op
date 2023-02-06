@@ -46,12 +46,28 @@ This contract enables Owner to mint, burn the ERC721 Tokens.
 
 #### Functions of NFTCollection. 
 
-NFT collection contract consists of approve(To approve the transfer of tokens), burn(To take tokens out of circulation), mint(To add tokens into circulation), renounce(To set new owner for the contract). 
+NFT collection contract consists of functions : approve(To approve the transfer of tokens), burn(To take tokens out of circulation), mint(To add tokens into circulation), renounce(To set new owner for the contract). 
 
 #### Image of Function and Function calls of NFTCollection contract. 
 
 ![Functions of NFTCollection Contract](images/Functions_NFTCollection.png)
 ![Function Calls of NFTCollection Contract](images/Function_calls_NFTCollection.png)
+
+### Deployment of RewardToken Contract
+
+Using RewardToken contract owner can mint ERC20 Tokens and distribute them at a later stage to the users.
+
+#### Image of the Deployed RewardToken Contract in Remix.
+![Deployed RewardToken Contract in Remix](images/Deployment_of_RewardToken.png)
+
+#### Functions of RewardToken contract
+
+This contract Enables Owner to mint(To mint ERC20 Tokens), approve(To approve the token Transfer). 
+
+#### Image of Function and Function calls of RewardToken contract.
+
+![Functions of RewardToken Contract](images/Function_RewardToken.png)
+![Function Calls of RewardToken Contract](images/Function_calls_RewardToken.png)
 
 ## Challenges/Next steps
 #### Testing Results:
