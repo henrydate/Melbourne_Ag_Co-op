@@ -101,7 +101,7 @@ cleaning, exploring, and manipulating data.
 * **Brownie** - Brownie is a Python-based development and testing framework for smart contracts targeting the Ethereum Virtual Machine.
 * **Infura** - Infura provides the tools and infrastructure that allow developers to easily take their blockchain application from testing to scaled deployment - with simple, reliable access to Ethereum and IPFS.
 * **Goerli** - Goerli is one of Ethereum's popular testnets. Web3 application developers use it to test out applications before launching on the Ethereum mainnet. If you want to test your ETH staking processes, we recommend using the Goerli network.
-* **Ethascan.io** - Etherscan, an Ethereum blockchain explorer, allows you to search the Ethereum blockchain for free. Through the tool, you can see records of past transactions, smart contracts, wallets, gas fees, and other information related to the Ethereum network.
+* **Etherscan.io** - Etherscan, an Ethereum blockchain explorer, allows you to search the Ethereum blockchain for free. Through the tool, you can see records of past transactions, smart contracts, wallets, gas fees, and other information related to the Ethereum network.
 
 ## Board Team Members
    *  Henry Date  
